@@ -73,11 +73,29 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="Estudiantes\FormActualizarEstudiante.Designer.vb">
+      <DependentUpon>FormActualizarEstudiante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estudiantes\FormActualizarEstudiante.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Estudiantes\FormEliminarEstudiante.Designer.vb">
+      <DependentUpon>FormEliminarEstudiante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estudiantes\FormEliminarEstudiante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estudiantes\FormRegistrarEstudiante.Designer.vb">
+      <DependentUpon>FormRegistrarEstudiante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estudiantes\FormRegistrarEstudiante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuPrincipal.Designer.vb">
+      <DependentUpon>FormMenuPrincipal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -97,6 +115,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Estudiantes\FormActualizarEstudiante.resx">
+      <DependentUpon>FormActualizarEstudiante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estudiantes\FormEliminarEstudiante.resx">
+      <DependentUpon>FormEliminarEstudiante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estudiantes\FormRegistrarEstudiante.resx">
+      <DependentUpon>FormRegistrarEstudiante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuPrincipal.resx">
+      <DependentUpon>FormMenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
