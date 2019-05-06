@@ -26,7 +26,6 @@ Partial Class _formMenuPrincipal
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(_formMenuPrincipal))
         Me._menuStrip_formMenuPrincipal = New System.Windows.Forms.MenuStrip()
         Me._estudiantesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me._toolTip_formMenuPrincipal = New System.Windows.Forms.ToolTip(Me.components)
         Me._estudiantesRegistrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me._estudiantesActualizarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me._estudiantesEliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -38,6 +37,7 @@ Partial Class _formMenuPrincipal
         Me._cursosConsultarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me._apoyoAcademicoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me._apoyoAcademicoProgramaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me._toolTip_formMenuPrincipal = New System.Windows.Forms.ToolTip(Me.components)
         Me._menuStrip_formMenuPrincipal.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -132,7 +132,7 @@ Partial Class _formMenuPrincipal
         '_apoyoAcademicoProgramaToolStripMenuItem
         '
         Me._apoyoAcademicoProgramaToolStripMenuItem.Name = "_apoyoAcademicoProgramaToolStripMenuItem"
-        Me._apoyoAcademicoProgramaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me._apoyoAcademicoProgramaToolStripMenuItem.Size = New System.Drawing.Size(105, 22)
         Me._apoyoAcademicoProgramaToolStripMenuItem.Text = "Curso"
         Me._apoyoAcademicoProgramaToolStripMenuItem.ToolTipText = "Permite acceder a los apoyos académicos registrados en los cursos"
         '

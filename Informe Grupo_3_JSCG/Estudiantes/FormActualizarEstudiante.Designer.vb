@@ -27,16 +27,14 @@ Partial Class _formActualizarEstudiante
         Me._panelSuperior = New System.Windows.Forms.Panel()
         Me._labelAyudaPrincipal_formActualizarEstudiante = New System.Windows.Forms.Label()
         Me._panelBuscarEstudiante = New System.Windows.Forms.Panel()
-        Me._panelInferior = New System.Windows.Forms.Panel()
-        Me._panelDatosEstudiante = New System.Windows.Forms.Panel()
-        Me._textBoxNumeroDocumento = New System.Windows.Forms.TextBox()
-        Me._labelNumeroDocumento = New System.Windows.Forms.Label()
-        Me._comboBoxTipoDocumento = New System.Windows.Forms.ComboBox()
-        Me._labelTipoDocumento = New System.Windows.Forms.Label()
-        Me._buttonActualizarEstudiante = New System.Windows.Forms.Button()
-        Me._toolTip_formActualizarEstudiante = New System.Windows.Forms.ToolTip(Me.components)
-        Me._errorProvider_formActualizarEstudiante = New System.Windows.Forms.ErrorProvider(Me.components)
         Me._buttonBuscar = New System.Windows.Forms.Button()
+        Me._textBoxNumeroDocumentoBuscar = New System.Windows.Forms.TextBox()
+        Me._labelNumeroDocumento = New System.Windows.Forms.Label()
+        Me._comboBoxTipoDocumentoBuscar = New System.Windows.Forms.ComboBox()
+        Me._labelTipoDocumento = New System.Windows.Forms.Label()
+        Me._panelInferior = New System.Windows.Forms.Panel()
+        Me._buttonActualizarEstudiante = New System.Windows.Forms.Button()
+        Me._panelDatosEstudiante = New System.Windows.Forms.Panel()
         Me._comboBoxSemestre = New System.Windows.Forms.ComboBox()
         Me._labelSemestre = New System.Windows.Forms.Label()
         Me._comboBoxProgramaAcademico = New System.Windows.Forms.ComboBox()
@@ -45,14 +43,16 @@ Partial Class _formActualizarEstudiante
         Me._labelTelefono = New System.Windows.Forms.Label()
         Me._textBoxDireccion = New System.Windows.Forms.TextBox()
         Me._labelDireccion = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me._textBoxNumeroDocumento = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me._comboBoxTipoDocumento = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me._textBoxApellidos = New System.Windows.Forms.TextBox()
         Me._labelApellidos = New System.Windows.Forms.Label()
         Me._textBoxNombres = New System.Windows.Forms.TextBox()
         Me._labelNombres = New System.Windows.Forms.Label()
+        Me._toolTip_formActualizarEstudiante = New System.Windows.Forms.ToolTip(Me.components)
+        Me._errorProvider_formActualizarEstudiante = New System.Windows.Forms.ErrorProvider(Me.components)
         Me._panelSuperior.SuspendLayout()
         Me._panelBuscarEstudiante.SuspendLayout()
         Me._panelInferior.SuspendLayout()
@@ -82,9 +82,9 @@ Partial Class _formActualizarEstudiante
         '_panelBuscarEstudiante
         '
         Me._panelBuscarEstudiante.Controls.Add(Me._buttonBuscar)
-        Me._panelBuscarEstudiante.Controls.Add(Me._textBoxNumeroDocumento)
+        Me._panelBuscarEstudiante.Controls.Add(Me._textBoxNumeroDocumentoBuscar)
         Me._panelBuscarEstudiante.Controls.Add(Me._labelNumeroDocumento)
-        Me._panelBuscarEstudiante.Controls.Add(Me._comboBoxTipoDocumento)
+        Me._panelBuscarEstudiante.Controls.Add(Me._comboBoxTipoDocumentoBuscar)
         Me._panelBuscarEstudiante.Controls.Add(Me._labelTipoDocumento)
         Me._panelBuscarEstudiante.Dock = System.Windows.Forms.DockStyle.Top
         Me._panelBuscarEstudiante.Location = New System.Drawing.Point(0, 57)
@@ -92,66 +92,42 @@ Partial Class _formActualizarEstudiante
         Me._panelBuscarEstudiante.Size = New System.Drawing.Size(668, 69)
         Me._panelBuscarEstudiante.TabIndex = 3
         '
-        '_panelInferior
+        '_buttonBuscar
         '
-        Me._panelInferior.Controls.Add(Me._buttonActualizarEstudiante)
-        Me._panelInferior.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me._panelInferior.Location = New System.Drawing.Point(0, 334)
-        Me._panelInferior.Name = "_panelInferior"
-        Me._panelInferior.Size = New System.Drawing.Size(668, 43)
-        Me._panelInferior.TabIndex = 4
+        Me._buttonBuscar.Location = New System.Drawing.Point(297, 40)
+        Me._buttonBuscar.Name = "_buttonBuscar"
+        Me._buttonBuscar.Size = New System.Drawing.Size(75, 23)
+        Me._buttonBuscar.TabIndex = 2
+        Me._buttonBuscar.Text = "&Buscar"
+        Me._toolTip_formActualizarEstudiante.SetToolTip(Me._buttonBuscar, "Pulse para buscar un estudiante")
+        Me._buttonBuscar.UseVisualStyleBackColor = True
         '
-        '_panelDatosEstudiante
+        '_textBoxNumeroDocumentoBuscar
         '
-        Me._panelDatosEstudiante.Controls.Add(Me._comboBoxSemestre)
-        Me._panelDatosEstudiante.Controls.Add(Me._labelSemestre)
-        Me._panelDatosEstudiante.Controls.Add(Me._comboBoxProgramaAcademico)
-        Me._panelDatosEstudiante.Controls.Add(Me._labelProgramaAcademico)
-        Me._panelDatosEstudiante.Controls.Add(Me._maskedTextBoxTelefono)
-        Me._panelDatosEstudiante.Controls.Add(Me._labelTelefono)
-        Me._panelDatosEstudiante.Controls.Add(Me._textBoxDireccion)
-        Me._panelDatosEstudiante.Controls.Add(Me._labelDireccion)
-        Me._panelDatosEstudiante.Controls.Add(Me.TextBox1)
-        Me._panelDatosEstudiante.Controls.Add(Me.Label1)
-        Me._panelDatosEstudiante.Controls.Add(Me.ComboBox1)
-        Me._panelDatosEstudiante.Controls.Add(Me.Label2)
-        Me._panelDatosEstudiante.Controls.Add(Me._textBoxApellidos)
-        Me._panelDatosEstudiante.Controls.Add(Me._labelApellidos)
-        Me._panelDatosEstudiante.Controls.Add(Me._textBoxNombres)
-        Me._panelDatosEstudiante.Controls.Add(Me._labelNombres)
-        Me._panelDatosEstudiante.Dock = System.Windows.Forms.DockStyle.Fill
-        Me._panelDatosEstudiante.Enabled = False
-        Me._panelDatosEstudiante.Location = New System.Drawing.Point(0, 126)
-        Me._panelDatosEstudiante.Name = "_panelDatosEstudiante"
-        Me._panelDatosEstudiante.Size = New System.Drawing.Size(668, 208)
-        Me._panelDatosEstudiante.TabIndex = 5
-        '
-        '_textBoxNumeroDocumento
-        '
-        Me._textBoxNumeroDocumento.Location = New System.Drawing.Point(495, 9)
-        Me._textBoxNumeroDocumento.Name = "_textBoxNumeroDocumento"
-        Me._textBoxNumeroDocumento.Size = New System.Drawing.Size(135, 20)
-        Me._textBoxNumeroDocumento.TabIndex = 1
-        Me._toolTip_formActualizarEstudiante.SetToolTip(Me._textBoxNumeroDocumento, "Por favor digite el número de documento del estudiante para realizar una busqueda" &
+        Me._textBoxNumeroDocumentoBuscar.Location = New System.Drawing.Point(495, 9)
+        Me._textBoxNumeroDocumentoBuscar.Name = "_textBoxNumeroDocumentoBuscar"
+        Me._textBoxNumeroDocumentoBuscar.Size = New System.Drawing.Size(135, 20)
+        Me._textBoxNumeroDocumentoBuscar.TabIndex = 1
+        Me._toolTip_formActualizarEstudiante.SetToolTip(Me._textBoxNumeroDocumentoBuscar, "Por favor digite el número de documento del estudiante para realizar una busqueda" &
         "")
         '
         '_labelNumeroDocumento
         '
         Me._labelNumeroDocumento.AutoSize = True
-        Me._labelNumeroDocumento.Location = New System.Drawing.Point(379, 16)
+        Me._labelNumeroDocumento.Location = New System.Drawing.Point(365, 16)
         Me._labelNumeroDocumento.Name = "_labelNumeroDocumento"
         Me._labelNumeroDocumento.Size = New System.Drawing.Size(110, 13)
         Me._labelNumeroDocumento.TabIndex = 11
         Me._labelNumeroDocumento.Text = "Número documento(*)"
         '
-        '_comboBoxTipoDocumento
+        '_comboBoxTipoDocumentoBuscar
         '
-        Me._comboBoxTipoDocumento.FormattingEnabled = True
-        Me._comboBoxTipoDocumento.Location = New System.Drawing.Point(161, 8)
-        Me._comboBoxTipoDocumento.Name = "_comboBoxTipoDocumento"
-        Me._comboBoxTipoDocumento.Size = New System.Drawing.Size(193, 21)
-        Me._comboBoxTipoDocumento.TabIndex = 0
-        Me._toolTip_formActualizarEstudiante.SetToolTip(Me._comboBoxTipoDocumento, "Por favor seleccione el tipo de documento del estudiante para realizar una busque" &
+        Me._comboBoxTipoDocumentoBuscar.FormattingEnabled = True
+        Me._comboBoxTipoDocumentoBuscar.Location = New System.Drawing.Point(152, 8)
+        Me._comboBoxTipoDocumentoBuscar.Name = "_comboBoxTipoDocumentoBuscar"
+        Me._comboBoxTipoDocumentoBuscar.Size = New System.Drawing.Size(193, 21)
+        Me._comboBoxTipoDocumentoBuscar.TabIndex = 0
+        Me._toolTip_formActualizarEstudiante.SetToolTip(Me._comboBoxTipoDocumentoBuscar, "Por favor seleccione el tipo de documento del estudiante para realizar una busque" &
         "da")
         '
         '_labelTipoDocumento
@@ -163,6 +139,15 @@ Partial Class _formActualizarEstudiante
         Me._labelTipoDocumento.TabIndex = 10
         Me._labelTipoDocumento.Text = "Tipo documento(*)"
         '
+        '_panelInferior
+        '
+        Me._panelInferior.Controls.Add(Me._buttonActualizarEstudiante)
+        Me._panelInferior.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me._panelInferior.Location = New System.Drawing.Point(0, 334)
+        Me._panelInferior.Name = "_panelInferior"
+        Me._panelInferior.Size = New System.Drawing.Size(668, 43)
+        Me._panelInferior.TabIndex = 4
+        '
         '_buttonActualizarEstudiante
         '
         Me._buttonActualizarEstudiante.Location = New System.Drawing.Point(297, 10)
@@ -173,19 +158,30 @@ Partial Class _formActualizarEstudiante
         Me._toolTip_formActualizarEstudiante.SetToolTip(Me._buttonActualizarEstudiante, "Pulse para actualizar un estudiante")
         Me._buttonActualizarEstudiante.UseVisualStyleBackColor = True
         '
-        '_errorProvider_formActualizarEstudiante
+        '_panelDatosEstudiante
         '
-        Me._errorProvider_formActualizarEstudiante.ContainerControl = Me
-        '
-        '_buttonBuscar
-        '
-        Me._buttonBuscar.Location = New System.Drawing.Point(297, 40)
-        Me._buttonBuscar.Name = "_buttonBuscar"
-        Me._buttonBuscar.Size = New System.Drawing.Size(75, 23)
-        Me._buttonBuscar.TabIndex = 2
-        Me._buttonBuscar.Text = "&Buscar"
-        Me._toolTip_formActualizarEstudiante.SetToolTip(Me._buttonBuscar, "Pulse para buscar un estudiante")
-        Me._buttonBuscar.UseVisualStyleBackColor = True
+        Me._panelDatosEstudiante.Controls.Add(Me._comboBoxSemestre)
+        Me._panelDatosEstudiante.Controls.Add(Me._labelSemestre)
+        Me._panelDatosEstudiante.Controls.Add(Me._comboBoxProgramaAcademico)
+        Me._panelDatosEstudiante.Controls.Add(Me._labelProgramaAcademico)
+        Me._panelDatosEstudiante.Controls.Add(Me._maskedTextBoxTelefono)
+        Me._panelDatosEstudiante.Controls.Add(Me._labelTelefono)
+        Me._panelDatosEstudiante.Controls.Add(Me._textBoxDireccion)
+        Me._panelDatosEstudiante.Controls.Add(Me._labelDireccion)
+        Me._panelDatosEstudiante.Controls.Add(Me._textBoxNumeroDocumento)
+        Me._panelDatosEstudiante.Controls.Add(Me.Label1)
+        Me._panelDatosEstudiante.Controls.Add(Me._comboBoxTipoDocumento)
+        Me._panelDatosEstudiante.Controls.Add(Me.Label2)
+        Me._panelDatosEstudiante.Controls.Add(Me._textBoxApellidos)
+        Me._panelDatosEstudiante.Controls.Add(Me._labelApellidos)
+        Me._panelDatosEstudiante.Controls.Add(Me._textBoxNombres)
+        Me._panelDatosEstudiante.Controls.Add(Me._labelNombres)
+        Me._panelDatosEstudiante.Dock = System.Windows.Forms.DockStyle.Fill
+        Me._panelDatosEstudiante.Enabled = False
+        Me._panelDatosEstudiante.Location = New System.Drawing.Point(0, 126)
+        Me._panelDatosEstudiante.Name = "_panelDatosEstudiante"
+        Me._panelDatosEstudiante.Size = New System.Drawing.Size(668, 208)
+        Me._panelDatosEstudiante.TabIndex = 5
         '
         '_comboBoxSemestre
         '
@@ -257,13 +253,13 @@ Partial Class _formActualizarEstudiante
         Me._labelDireccion.TabIndex = 29
         Me._labelDireccion.Text = "Dirección"
         '
-        'TextBox1
+        '_textBoxNumeroDocumento
         '
-        Me.TextBox1.Location = New System.Drawing.Point(495, 89)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(135, 20)
-        Me.TextBox1.TabIndex = 3
-        Me._toolTip_formActualizarEstudiante.SetToolTip(Me.TextBox1, "Por favor digite el número de documento del estudiante")
+        Me._textBoxNumeroDocumento.Location = New System.Drawing.Point(495, 89)
+        Me._textBoxNumeroDocumento.Name = "_textBoxNumeroDocumento"
+        Me._textBoxNumeroDocumento.Size = New System.Drawing.Size(135, 20)
+        Me._textBoxNumeroDocumento.TabIndex = 3
+        Me._toolTip_formActualizarEstudiante.SetToolTip(Me._textBoxNumeroDocumento, "Por favor digite el número de documento del estudiante")
         '
         'Label1
         '
@@ -274,14 +270,14 @@ Partial Class _formActualizarEstudiante
         Me.Label1.TabIndex = 28
         Me.Label1.Text = "Número documento(*)"
         '
-        'ComboBox1
+        '_comboBoxTipoDocumento
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(161, 88)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(193, 21)
-        Me.ComboBox1.TabIndex = 2
-        Me._toolTip_formActualizarEstudiante.SetToolTip(Me.ComboBox1, "Por favor seleccione el tipo de documento del estudiante")
+        Me._comboBoxTipoDocumento.FormattingEnabled = True
+        Me._comboBoxTipoDocumento.Location = New System.Drawing.Point(161, 88)
+        Me._comboBoxTipoDocumento.Name = "_comboBoxTipoDocumento"
+        Me._comboBoxTipoDocumento.Size = New System.Drawing.Size(193, 21)
+        Me._comboBoxTipoDocumento.TabIndex = 2
+        Me._toolTip_formActualizarEstudiante.SetToolTip(Me._comboBoxTipoDocumento, "Por favor seleccione el tipo de documento del estudiante")
         '
         'Label2
         '
@@ -326,6 +322,10 @@ Partial Class _formActualizarEstudiante
         Me._labelNombres.TabIndex = 19
         Me._labelNombres.Text = "Nombres(*)"
         '
+        '_errorProvider_formActualizarEstudiante
+        '
+        Me._errorProvider_formActualizarEstudiante.ContainerControl = Me
+        '
         '_formActualizarEstudiante
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -357,9 +357,9 @@ Partial Class _formActualizarEstudiante
     Friend WithEvents _panelBuscarEstudiante As Panel
     Friend WithEvents _panelInferior As Panel
     Friend WithEvents _panelDatosEstudiante As Panel
-    Friend WithEvents _textBoxNumeroDocumento As TextBox
+    Friend WithEvents _textBoxNumeroDocumentoBuscar As TextBox
     Friend WithEvents _labelNumeroDocumento As Label
-    Friend WithEvents _comboBoxTipoDocumento As ComboBox
+    Friend WithEvents _comboBoxTipoDocumentoBuscar As ComboBox
     Friend WithEvents _labelTipoDocumento As Label
     Friend WithEvents _buttonActualizarEstudiante As Button
     Friend WithEvents _toolTip_formActualizarEstudiante As ToolTip
@@ -373,9 +373,9 @@ Partial Class _formActualizarEstudiante
     Friend WithEvents _labelTelefono As Label
     Friend WithEvents _textBoxDireccion As TextBox
     Friend WithEvents _labelDireccion As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents _textBoxNumeroDocumento As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents _comboBoxTipoDocumento As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents _textBoxApellidos As TextBox
     Friend WithEvents _labelApellidos As Label
